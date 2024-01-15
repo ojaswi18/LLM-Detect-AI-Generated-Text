@@ -2,11 +2,12 @@
 
 ## Problem Statement
 
-The problem statement for this project can be found [here]([https://www.kaggle.com/competitions/llm-detect-ai-generated-text/overview/description](http://www.kaggle.com/competitions/llm-detect-ai-generated-text/overview/description)).
+The problem statement for this project can be found [here](https://www.kaggle.com/competitions/llm-detect-ai-generated-text/overview/description).
 
 ## Dataset
 
-The original dataset is available on Kaggle: [Dataset Link]([https://www.kaggle.com/competitions/llm-detect-ai-generated-text/data](https://www.kaggle.com/competitions/llm-detect-ai-generated-text/data)).
+The original dataset is available on Kaggle: [Dataset Link](https://www.kaggle.com/competitions/llm-detect-ai-generated-text/data).
+
 
 ### Extended Dataset
 
@@ -55,11 +56,13 @@ ________________________________________________________________________________
  dense_3 (Dense)             (None, 1)                    193       ['concatenate_1[0][0]']       
 
 ### Model Accuracy
-![model accuracy](https://github.com/ojaswi18/LLM-Detect-AI-Generated-Text/assets/102872838/3bd264c1-9aea-4474-92e1-4de9b4f6d9c4)
+![model accuracy](https://github.com/ojaswi18/LLM-Detect-AI-Generated-Text/assets/102872838/27655658-d008-4bc0-ada3-386d727a9ba7)
+
 
 ### Model Loss
-![model loss](https://github.com/ojaswi18/LLM-Detect-AI-Generated-Text/assets/102872838/19d6af84-4303-44e5-a712-30640726abda)
+![model loss](https://github.com/ojaswi18/LLM-Detect-AI-Generated-Text/assets/102872838/b2cffd35-db56-47a5-b00b-b3bd8548250d)
 
 
-##This gave an accuracy of 83.3% on the test data of Kaggle.
+
+##This gave an accuracy of 82.3% on the test data of Kaggle.
  
