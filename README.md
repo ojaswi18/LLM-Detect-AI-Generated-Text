@@ -15,52 +15,21 @@ To address the imbalance issue in the original dataset, additional AI-generated 
 
 After identifying the imbalance, an undersampling technique was applied, resulting in a balanced dataset with 44,087 samples for each label '1' and '0'.
 
-# Deep Neural Network Architecture
+## Deep Neural Network Architecture
 
 ## Model Summary
 
-```plaintext
-Model: "model_1"
-__________________________________________________________________________________________________
- Layer (type)                Output Shape                 Param #   Connected to                  
-==================================================================================================
- input_2 (InputLayer)        [(None, 2500)]               0         []                            
-                                                                                                  
- embedding_1 (Embedding)     (None, 2500, 32)             3081536   ['input_2[0][0]']             
-                                                                                                  
- conv1d_1 (Conv1D)           (None, 2496, 128)            20608     ['embedding_1[0][0]']         
-                                                                                                  
- flatten_1 (Flatten)         (None, 80000)                0         ['embedding_1[0][0]']         
-                                                                                                  
- batch_normalization_2 (Bat  (None, 2496, 128)            512       ['conv1d_1[0][0]']            
- chNormalization)                                                                                 
-                                                                                                  
- dense_2 (Dense)             (None, 64)                   5120064   ['flatten_1[0][0]']           
-                                                                                                  
- dropout_2 (Dropout)         (None, 2496, 128)            0         ['batch_normalization_2[0][0]'
-                                                                    ]                             
-                                                                                                  
- batch_normalization_3 (Bat  (None, 64)                   256       ['dense_2[0][0]']             
- chNormalization)                                                                                 
-                                                                                                  
- global_max_pooling1d_1 (Gl  (None, 128)                  0         ['dropout_2[0][0]']           
- obalMaxPooling1D)                                                                                
-                                                                                                  
- dropout_3 (Dropout)         (None, 64)                   0         ['batch_normalization_3[0][0]'
-                                                                    ]                             
-                                                                                                  
- concatenate_1 (Concatenate  (None, 192)                  0         ['global_max_pooling1d_1[0][0]
- )                                                                  ',                            
-                                                                     'dropout_3[0][0]']           
-                                                                                                  
- dense_3 (Dense)             (None, 1)                    193       ['concatenate_1[0][0]']       
+![dnn](https://github.com/ojaswi18/LLM-Detect-AI-Generated-Text/assets/102872838/55041836-b2a7-485e-863e-098a0d2ab484)
 
-### Model Accuracy
-![model accuracy](https://github.com/ojaswi18/LLM-Detect-AI-Generated-Text/assets/102872838/c8f173bb-e192-477a-93d5-2dbd05f0d1e6)
+## Model Accuracy and Model Loss
+![model accuracy](https://github.com/ojaswi18/LLM-Detect-AI-Generated-Text/assets/102872838/eec68597-03cb-4448-9cea-44f7197840d3)
 
-### Model Loss
-![model loss](https://github.com/ojaswi18/LLM-Detect-AI-Generated-Text/assets/102872838/64c46a7f-9dcb-4971-bb4e-affaa9990705)
+#### This gave an accuracy of 82.3% on the test data of Kaggle.
 
 
-##This gave an accuracy of 82.3% on the test data of Kaggle.
+ 
+
+
+
+
  
