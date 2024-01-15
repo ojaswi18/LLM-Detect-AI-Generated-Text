@@ -56,12 +56,10 @@ ________________________________________________________________________________
  dense_3 (Dense)             (None, 1)                    193       ['concatenate_1[0][0]']       
 
 ### Model Accuracy
-![model accuracy](https://github.com/ojaswi18/LLM-Detect-AI-Generated-Text/assets/102872838/27655658-d008-4bc0-ada3-386d727a9ba7)
-
+![model accuracy](https://github.com/ojaswi18/LLM-Detect-AI-Generated-Text/assets/102872838/c8f173bb-e192-477a-93d5-2dbd05f0d1e6)
 
 ### Model Loss
-![model loss](https://github.com/ojaswi18/LLM-Detect-AI-Generated-Text/assets/102872838/b2cffd35-db56-47a5-b00b-b3bd8548250d)
-
+![model loss](https://github.com/ojaswi18/LLM-Detect-AI-Generated-Text/assets/102872838/64c46a7f-9dcb-4971-bb4e-affaa9990705)
 
 
 ##This gave an accuracy of 82.3% on the test data of Kaggle.
